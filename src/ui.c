@@ -19,7 +19,7 @@ void tampil_menu(void) {
     printf("==============================================\n");
     printf("  1. Lihat Status komputer (Billing Monitor)\n");
     printf("  2. Daftar Token (Kasir, Pre-Paid)\n");
-    printf("  3. Login degnan Token(Pre-Paid)\n");
+    printf("  3. Login dengan Token(Pre-Paid)\n");
     printf("  4. Lihat Token Aktif\n");
     printf("  0. Keluar\n");
     printf("----------------------------------------------\n");
