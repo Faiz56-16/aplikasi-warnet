@@ -1,6 +1,6 @@
 # Dokumentasi Program Rental Warnet Berbasis Console (Bahasa C)
 
-Aplikasi rental warnet sederhana ini beroperasi melalui antarmuka perintah/terminal (*console*). Sistem ini mengelola status komputer, mencatat waktu sewa secara otomatis menggunakan pustaka `time.h`, dan mengkalkulasi total biaya sewa saat transaksi dihentikan.
+Aplikasi rental warnet sederhana ini beroperasi melalui antarmuka perintah/terminal. Sistem ini mengelola status komputer, mencatat waktu sewa secara otomatis menggunakan pustaka `time.h`, dan mengkalkulasi total biaya sewa saat transaksi dihentikan.
 
 Selain sewa reguler (*post-paid*), program mendukung sewa paket berbasis **token** (*pre-paid*) dengan timer mundur, peringatan 3 menit terakhir, dan kunci otomatis saat waktu habis. Sesi disimpan ke file sehingga dapat dilanjutkan setelah program ditutup.
 
