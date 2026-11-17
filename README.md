@@ -59,24 +59,31 @@ gcc -O2 -Iinclude src/*.c -o warnet
 
 ```
 warnet/
-├── Makefile
-├── include/
-│   ├── config.h    Konstanta (jumlah PC, tarif, batas peringatan, nama file data)
-│   ├── types.h     Struct komputer, Paket, Token
-│   ├── state.h     Data global (pc[], daftar_token[], paket_list[])
-│   ├── util.h      Input aman + format durasi/rupiah/waktu
-│   ├── storage.h   Simpan/muat sesi
-│   ├── billing.h   Biaya, struk, stop sesi, auto-lock
-│   ├── ui.h        Menu, tabel status, pilih unit, input nama
-│   └── token.h     Buat/login/lihat token pre-paid
-└── src/
-    ├── main.c      Inisialisasi dan loop menu
-    ├── state.c     Definisi data global dan daftar paket
-    ├── util.c
-    ├── storage.c
-    ├── billing.c
-    ├── ui.c
-    └── token.c
+│
+├── include/                  # Header files: deklarasi dan definisi
+│   ├── billing.h             # Deklarasi fungsi transaksi dan penagihan
+│   ├── config.h              # Konfigurasi: jumlah PC, tarif, dan batas waktu
+│   ├── state.h               # Deklarasi variabel global kondisi aplikasi
+│   ├── storage.h             # Deklarasi fungsi penyimpanan dan pemuatan sesi
+│   ├── token.h               # Deklarasi fungsi pengelolaan token pre-paid
+│   ├── types.h               # Definisi struktur data komputer, paket, dan token
+│   ├── ui.h                  # Deklarasi fungsi tampilan menu dan input pengguna
+│   └── util.h                # Deklarasi fungsi pembantu dan validasi input
+│
+├── src/                      # Source files: implementasi program
+│   ├── billing.c             # Implementasi perhitungan biaya dan transaksi
+│   ├── main.c                # Inisialisasi dan pengendali utama aplikasi
+│   ├── state.c               # Definisi data global dan daftar paket
+│   ├── storage.c             # Implementasi penyimpanan dan pemuatan data sesi
+│   ├── token.c               # Implementasi sistem token pre-paid
+│   ├── ui.c                  # Implementasi antarmuka berbasis terminal (CLI)
+│   └── util.c                # Implementasi fungsi utilitas
+│
+├── Makefile                  # Building System
+├── README.md                 # Dokumentasi proyek dan panduan penggunaan
+├── sesi.dat                  # File penyimpanan data sesi penyewaan
+└── warnet*.exe               # Executable hasil kompilasi program
+
 ```
 
 ### Ketergantungan antar modul
