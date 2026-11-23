@@ -1,4 +1,9 @@
 # Aplikasi Rental Warnet Berbasis Console (Bahasa C)
+## Anggota kelompok 7:
+1. Vega Thalita Rifty (26071207096)
+2. May Miska Elviza (26071100838)
+3. Muhamad Zaki (26071206892)
+4. Faiza Widana Nursyaban (26071305979)
 
 Aplikasi rental warnet sederhana ini beroperasi melalui antarmuka perintah/terminal. Sistem ini mengelola status komputer, mencatat waktu sewa secara otomatis menggunakan pustaka `time.h`, dan mengkalkulasi total biaya sewa saat transaksi dihentikan.
 
